@@ -10,7 +10,16 @@ First, install dependencies.
 npm install
 ```
 
-This script runs the `accounts` task and starts a local node that emulates mainnet.
+Next, copy `.env.example` into a new file `.env`.
+
+```shell
+cp .env.example .env
+vim .env
+```
+
+Edit the variable(s) to use your own parameters.
+
+The following script runs the `accounts` task from `hardhat.config.js` and starts a local node that emulates Ethereum mainnet.
 
 ```shell
 ./run.sh
