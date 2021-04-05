@@ -2,6 +2,7 @@ require("@nomiclabs/hardhat-waffle");
 require('dotenv').config();
 
 const ETH_URL = process.env.ETH_URL;
+const BLOCK_NUMBER = parseInt(process.env.BLOCK_NUMBER) || 12181575;
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -29,7 +30,7 @@ module.exports = {
       chainId: 1337,
       forking: {
         url: ETH_URL,
-        blockNumber: 12181575
+        blockNumber: BLOCK_NUMBER
       }
     },
   }
